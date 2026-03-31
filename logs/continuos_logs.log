@@ -342,3 +342,902 @@ OSError: [Errno 22] Invalid argument: 'C:/Users/HP/Desktop/Y3 S2/projects/Text-S
 [2026-03-24 12:10:39,085: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/model.safetensors "HTTP/1.1 302 Found"]
 [2026-03-24 12:10:39,091: WARNING: _http: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.]
 [2026-03-24 12:10:39,461: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google-t5/t5-small/xet-read-token/df1b051c49625cf57a3d0d8d3863ed4d13564fe4 "HTTP/1.1 200 OK"]
+[2026-03-31 14:43:43,599: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-31 14:43:43,724: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-31 14:43:43,737: INFO: common: created directory at: artifacts]
+[2026-03-31 14:43:43,747: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-03-31 14:44:20,709: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-31 14:44:20,719: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-31 14:44:20,726: INFO: common: created directory at: artifacts]
+[2026-03-31 14:44:20,732: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-03-31 20:07:19,942: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-31 20:07:19,955: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-31 20:07:19,959: INFO: common: created directory at: artifacts]
+[2026-03-31 20:07:19,963: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-03-31 20:07:20,430: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/config.json "HTTP/1.1 200 OK"]
+[2026-03-31 20:07:20,775: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-03-31 20:07:21,103: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/t5-small/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-31 20:07:21,385: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google-t5/t5-small/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-03-31 20:07:21,678: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/t5-small/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-31 20:07:21,960: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google-t5/t5-small/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-03-31 20:07:22,789: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/config.json "HTTP/1.1 200 OK"]
+[2026-03-31 20:07:22,792: WARNING: _http: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.]
+[2026-03-31 20:07:23,143: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/model.safetensors "HTTP/1.1 302 Found"]
+[2026-03-31 20:07:23,559: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google-t5/t5-small/xet-read-token/df1b051c49625cf57a3d0d8d3863ed4d13564fe4 "HTTP/1.1 200 OK"]
+[2026-03-31 20:07:45,279: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/generation_config.json "HTTP/1.1 200 OK"]
+[2026-03-31 20:07:45,576: INFO: _client: HTTP Request: GET https://huggingface.co/t5-small/resolve/main/generation_config.json "HTTP/1.1 200 OK"]
+[2026-03-31 20:12:25,694: INFO: rouge_scorer: Using default tokenizer.]
+[2026-03-31 21:02:13,882: INFO: server: Started server process [23568]]
+[2026-03-31 21:02:13,883: INFO: on: Waiting for application startup.]
+[2026-03-31 21:02:13,883: INFO: on: Application startup complete.]
+[2026-03-31 21:02:13,884: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2026-03-31 21:16:19,019: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-31 21:16:19,047: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-31 21:16:19,060: INFO: common: created directory at: artifacts]
+[2026-03-31 21:16:19,063: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-03-31 21:16:19,123: ERROR: h11_impl: Exception in ASGI application
+]
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\utils\hub.py", line 422, in cached_files
+    hf_hub_download(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\huggingface_hub\utils\_validators.py", line 85, in _inner_fn
+    validate_repo_id(arg_value)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\huggingface_hub\utils\_validators.py", line 133, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'artifacts/model_trainer/tokenizer'. Use `repo_type` argument if needed.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\models\auto\tokenization_auto.py", line 684, in from_pretrained
+    config = AutoConfig.from_pretrained(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\models\auto\configuration_auto.py", line 1465, in from_pretrained
+    config_dict, unused_kwargs = PreTrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\configuration_utils.py", line 659, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\configuration_utils.py", line 714, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\utils\hub.py", line 278, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\utils\hub.py", line 473, in cached_files
+    raise OSError(f"{e}") from e
+OSError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'artifacts/model_trainer/tokenizer'. Use `repo_type` argument if needed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\utils\hub.py", line 422, in cached_files
+    hf_hub_download(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\huggingface_hub\utils\_validators.py", line 85, in _inner_fn
+    validate_repo_id(arg_value)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\huggingface_hub\utils\_validators.py", line 133, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'artifacts/model_trainer/tokenizer'. Use `repo_type` argument if needed.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\app.py", line 34, in predict_route
+    raise e
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\app.py", line 31, in predict_route
+    text = obj.predict(text)
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\src\textSummarizer\pipeline\prediction_pipeline.py", line 10, in predict
+    tokenizer = AutoTokenizer.from_pretrained(self.config.tokenizer_path)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\models\auto\tokenization_auto.py", line 688, in from_pretrained
+    config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\configuration_utils.py", line 618, in from_pretrained
+    config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\configuration_utils.py", line 659, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\configuration_utils.py", line 714, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\utils\hub.py", line 278, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\utils\hub.py", line 473, in cached_files
+    raise OSError(f"{e}") from e
+OSError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'artifacts/model_trainer/tokenizer'. Use `repo_type` argument if needed.
+[2026-03-31 21:20:14,526: INFO: config: TensorFlow version 2.21.0 available.]
+[2026-03-31 21:21:17,420: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-31 21:21:17,426: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-31 21:21:17,429: INFO: common: created directory at: artifacts]
+[2026-03-31 21:21:17,430: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-03-31 21:21:17,435: ERROR: h11_impl: Exception in ASGI application
+]
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\utils\hub.py", line 422, in cached_files
+    hf_hub_download(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\huggingface_hub\utils\_validators.py", line 85, in _inner_fn
+    validate_repo_id(arg_value)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\huggingface_hub\utils\_validators.py", line 133, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'artifacts/model_trainer/tokenizer'. Use `repo_type` argument if needed.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\models\auto\tokenization_auto.py", line 684, in from_pretrained
+    config = AutoConfig.from_pretrained(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\models\auto\configuration_auto.py", line 1465, in from_pretrained
+    config_dict, unused_kwargs = PreTrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\configuration_utils.py", line 659, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\configuration_utils.py", line 714, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\utils\hub.py", line 278, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\utils\hub.py", line 473, in cached_files
+    raise OSError(f"{e}") from e
+OSError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'artifacts/model_trainer/tokenizer'. Use `repo_type` argument if needed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\utils\hub.py", line 422, in cached_files
+    hf_hub_download(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\huggingface_hub\utils\_validators.py", line 85, in _inner_fn
+    validate_repo_id(arg_value)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\huggingface_hub\utils\_validators.py", line 133, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'artifacts/model_trainer/tokenizer'. Use `repo_type` argument if needed.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\app.py", line 34, in predict_route
+    raise e
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\app.py", line 31, in predict_route
+    text = obj.predict(text)
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\src\textSummarizer\pipeline\prediction_pipeline.py", line 10, in predict
+    tokenizer = AutoTokenizer.from_pretrained(self.config.tokenizer_path)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\models\auto\tokenization_auto.py", line 688, in from_pretrained
+    config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\configuration_utils.py", line 618, in from_pretrained
+    config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\configuration_utils.py", line 659, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\configuration_utils.py", line 714, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\utils\hub.py", line 278, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\utils\hub.py", line 473, in cached_files
+    raise OSError(f"{e}") from e
+OSError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'artifacts/model_trainer/tokenizer'. Use `repo_type` argument if needed.
+[2026-03-31 21:26:52,058: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-31 21:26:52,068: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-31 21:26:52,073: INFO: common: created directory at: artifacts]
+[2026-03-31 21:26:52,073: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-03-31 21:26:52,085: ERROR: h11_impl: Exception in ASGI application
+]
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\utils\hub.py", line 422, in cached_files
+    hf_hub_download(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\huggingface_hub\utils\_validators.py", line 85, in _inner_fn
+    validate_repo_id(arg_value)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\huggingface_hub\utils\_validators.py", line 133, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'artifacts/model_trainer/tokenizer'. Use `repo_type` argument if needed.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\models\auto\tokenization_auto.py", line 684, in from_pretrained
+    config = AutoConfig.from_pretrained(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\models\auto\configuration_auto.py", line 1465, in from_pretrained
+    config_dict, unused_kwargs = PreTrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\configuration_utils.py", line 659, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\configuration_utils.py", line 714, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\utils\hub.py", line 278, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\utils\hub.py", line 473, in cached_files
+    raise OSError(f"{e}") from e
+OSError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'artifacts/model_trainer/tokenizer'. Use `repo_type` argument if needed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\utils\hub.py", line 422, in cached_files
+    hf_hub_download(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\huggingface_hub\utils\_validators.py", line 85, in _inner_fn
+    validate_repo_id(arg_value)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\huggingface_hub\utils\_validators.py", line 133, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'artifacts/model_trainer/tokenizer'. Use `repo_type` argument if needed.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\app.py", line 34, in predict_route
+    raise e
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\app.py", line 31, in predict_route
+    text = obj.predict(text)
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\src\textSummarizer\pipeline\prediction_pipeline.py", line 10, in predict
+    tokenizer = AutoTokenizer.from_pretrained(self.config.tokenizer_path)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\models\auto\tokenization_auto.py", line 688, in from_pretrained
+    config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\configuration_utils.py", line 618, in from_pretrained
+    config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\configuration_utils.py", line 659, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\configuration_utils.py", line 714, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\utils\hub.py", line 278, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\utils\hub.py", line 473, in cached_files
+    raise OSError(f"{e}") from e
+OSError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'artifacts/model_trainer/tokenizer'. Use `repo_type` argument if needed.
+[2026-03-31 21:34:41,690: INFO: config: TensorFlow version 2.21.0 available.]
+[2026-03-31 21:34:46,123: INFO: fake_tensor: FakeTensor cache stats:]
+[2026-03-31 21:34:46,124: INFO: fake_tensor:   cache_hits: 0]
+[2026-03-31 21:34:46,124: INFO: fake_tensor:   cache_misses: 0]
+[2026-03-31 21:35:28,055: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-31 21:35:28,059: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-31 21:35:28,061: INFO: common: created directory at: artifacts]
+[2026-03-31 21:35:28,062: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-03-31 21:35:28,067: ERROR: h11_impl: Exception in ASGI application
+]
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\utils\hub.py", line 422, in cached_files
+    hf_hub_download(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\huggingface_hub\utils\_validators.py", line 85, in _inner_fn
+    validate_repo_id(arg_value)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\huggingface_hub\utils\_validators.py", line 133, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'artifacts/model_trainer/tokenizer'. Use `repo_type` argument if needed.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\models\auto\tokenization_auto.py", line 684, in from_pretrained
+    config = AutoConfig.from_pretrained(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\models\auto\configuration_auto.py", line 1465, in from_pretrained
+    config_dict, unused_kwargs = PreTrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\configuration_utils.py", line 659, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\configuration_utils.py", line 714, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\utils\hub.py", line 278, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\utils\hub.py", line 473, in cached_files
+    raise OSError(f"{e}") from e
+OSError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'artifacts/model_trainer/tokenizer'. Use `repo_type` argument if needed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\utils\hub.py", line 422, in cached_files
+    hf_hub_download(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\huggingface_hub\utils\_validators.py", line 85, in _inner_fn
+    validate_repo_id(arg_value)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\huggingface_hub\utils\_validators.py", line 133, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'artifacts/model_trainer/tokenizer'. Use `repo_type` argument if needed.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\app.py", line 34, in predict_route
+    raise e
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\app.py", line 31, in predict_route
+    text = obj.predict(text)
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\src\textSummarizer\pipeline\prediction_pipeline.py", line 10, in predict
+    tokenizer = AutoTokenizer.from_pretrained(self.config.tokenizer_path)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\models\auto\tokenization_auto.py", line 688, in from_pretrained
+    config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\configuration_utils.py", line 618, in from_pretrained
+    config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\configuration_utils.py", line 659, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\configuration_utils.py", line 714, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\utils\hub.py", line 278, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\utils\hub.py", line 473, in cached_files
+    raise OSError(f"{e}") from e
+OSError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'artifacts/model_trainer/tokenizer'. Use `repo_type` argument if needed.
+[2026-03-31 21:36:57,549: INFO: server: Shutting down]
+[2026-03-31 21:36:57,659: INFO: on: Waiting for application shutdown.]
+[2026-03-31 21:36:57,677: INFO: on: Application shutdown complete.]
+[2026-03-31 21:36:57,679: INFO: server: Finished server process [23568]]
+[2026-03-31 21:37:08,492: INFO: server: Started server process [20924]]
+[2026-03-31 21:37:08,492: INFO: on: Waiting for application startup.]
+[2026-03-31 21:37:08,493: INFO: on: Application startup complete.]
+[2026-03-31 21:37:08,494: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2026-03-31 21:37:35,635: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-31 21:37:35,639: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-31 21:37:35,640: INFO: common: created directory at: artifacts]
+[2026-03-31 21:37:35,640: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-03-31 21:37:36,119: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/config.json "HTTP/1.1 200 OK"]
+[2026-03-31 21:37:36,491: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-03-31 21:37:36,815: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/t5-small/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-31 21:37:37,094: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google-t5/t5-small/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-03-31 21:37:37,382: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/t5-small/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-31 21:37:37,671: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google-t5/t5-small/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-03-31 21:37:38,314: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/config.json "HTTP/1.1 200 OK"]
+[2026-03-31 21:37:38,329: ERROR: h11_impl: Exception in ASGI application
+]
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\app.py", line 34, in predict_route
+    raise e
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\app.py", line 31, in predict_route
+    text = obj.predict(text)
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\src\textSummarizer\pipeline\prediction_pipeline.py", line 13, in predict
+    pipe = pipeline("summarization", model=self.config.model_path,tokenizer=tokenizer)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\pipelines\__init__.py", line 747, in pipeline
+    normalized_task, targeted_task, task_options = check_task(task)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\pipelines\__init__.py", line 355, in check_task
+    return PIPELINE_REGISTRY.check_task(task)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\pipelines\base.py", line 1338, in check_task
+    raise KeyError(f"Unknown task {task}, available tasks are {self.get_supported_tasks()}")
+KeyError: "Unknown task summarization, available tasks are ['any-to-any', 'audio-classification', 'automatic-speech-recognition', 'depth-estimation', 'document-question-answering', 'feature-extraction', 'fill-mask', 'image-classification', 'image-feature-extraction', 'image-segmentation', 'image-text-to-text', 'keypoint-matching', 'mask-generation', 'ner', 'object-detection', 'sentiment-analysis', 'table-question-answering', 'text-classification', 'text-generation', 'text-to-audio', 'text-to-speech', 'token-classification', 'video-classification', 'zero-shot-audio-classification', 'zero-shot-classification', 'zero-shot-image-classification', 'zero-shot-object-detection']"
+[2026-03-31 21:38:57,293: INFO: server: Shutting down]
+[2026-03-31 21:38:57,404: INFO: on: Waiting for application shutdown.]
+[2026-03-31 21:38:57,407: INFO: on: Application shutdown complete.]
+[2026-03-31 21:38:57,408: INFO: server: Finished server process [20924]]
+[2026-03-31 21:39:08,533: INFO: config: TensorFlow version 2.21.0 available.]
+[2026-03-31 21:40:37,214: INFO: config: TensorFlow version 2.21.0 available.]
+[2026-03-31 21:41:23,785: INFO: config: TensorFlow version 2.21.0 available.]
+[2026-03-31 21:41:30,808: INFO: main: stage Data Ingestion Stage initiated]
+[2026-03-31 21:41:30,810: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-31 21:41:30,812: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-31 21:41:30,812: INFO: common: created directory at: artifacts]
+[2026-03-31 21:41:30,813: INFO: common: created directory at: artifacts\data_ingestion]
+[2026-03-31 21:41:30,814: INFO: common: created directory at: artifacts\data_ingestion\raw]
+[2026-03-31 21:41:30,814: INFO: data_ingestion: Downloading dataset knkarthick/samsum from Hugging Face...]
+[2026-03-31 21:41:31,199: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-31 21:41:31,248: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/knkarthick/samsum/6b929ff10edec703164e3ddb2e94aae058c9ab5f/README.md "HTTP/1.1 200 OK"]
+[2026-03-31 21:41:31,537: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/6b929ff10edec703164e3ddb2e94aae058c9ab5f/samsum.py "HTTP/1.1 404 Not Found"]
+[2026-03-31 21:41:31,539: WARNING: _http: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.]
+[2026-03-31 21:41:32,301: INFO: _client: HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/knkarthick/samsum/knkarthick/samsum.py "HTTP/1.1 404 Not Found"]
+[2026-03-31 21:41:32,598: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/knkarthick/samsum/revision/6b929ff10edec703164e3ddb2e94aae058c9ab5f "HTTP/1.1 200 OK"]
+[2026-03-31 21:41:32,875: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/6b929ff10edec703164e3ddb2e94aae058c9ab5f/.huggingface.yaml "HTTP/1.1 404 Not Found"]
+[2026-03-31 21:41:33,313: INFO: _client: HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=knkarthick/samsum "HTTP/1.1 200 OK"]
+[2026-03-31 21:41:33,595: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/knkarthick/samsum/tree/6b929ff10edec703164e3ddb2e94aae058c9ab5f/data?recursive=true&expand=false "HTTP/1.1 404 Not Found"]
+[2026-03-31 21:41:33,889: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/knkarthick/samsum/tree/6b929ff10edec703164e3ddb2e94aae058c9ab5f?recursive=false&expand=false "HTTP/1.1 200 OK"]
+[2026-03-31 21:41:34,242: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/6b929ff10edec703164e3ddb2e94aae058c9ab5f/dataset_infos.json "HTTP/1.1 404 Not Found"]
+[2026-03-31 21:41:34,421: INFO: data_ingestion: Dataset saved successfully at: artifacts\data_ingestion]
+[2026-03-31 21:41:34,423: INFO: data_ingestion: Using Hugging Face format; skipping zip extraction.]
+[2026-03-31 21:41:34,423: INFO: main: stage Data Ingestion Stage completed]
+[2026-03-31 21:41:34,423: INFO: main: stage Data Transformation Stage initiated]
+[2026-03-31 21:41:34,424: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-31 21:41:34,426: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-31 21:41:34,427: INFO: common: created directory at: artifacts]
+[2026-03-31 21:41:34,427: INFO: common: created directory at: artifacts/data_transformation]
+[2026-03-31 21:41:34,719: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/config.json "HTTP/1.1 200 OK"]
+[2026-03-31 21:41:35,003: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-03-31 21:41:35,295: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/t5-small/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-31 21:41:35,582: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google-t5/t5-small/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-03-31 21:41:35,869: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/t5-small/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-31 21:41:36,164: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google-t5/t5-small/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-03-31 21:41:38,982: INFO: main: stage Data Transformation Stage completed]
+[2026-03-31 21:41:38,983: INFO: main: *******************]
+[2026-03-31 21:41:38,983: INFO: main: >>>>>> stage Model Trainer Stage initiated <<<<<<]
+[2026-03-31 21:41:38,984: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-31 21:41:38,985: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-31 21:41:38,986: INFO: common: created directory at: artifacts]
+[2026-03-31 21:41:38,986: INFO: common: created directory at: artifacts/model_trainer]
+[2026-03-31 21:41:39,284: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/config.json "HTTP/1.1 200 OK"]
+[2026-03-31 21:41:39,565: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-03-31 21:41:39,845: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/t5-small/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-31 21:41:40,123: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google-t5/t5-small/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-03-31 21:41:40,430: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/t5-small/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-31 21:41:40,723: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google-t5/t5-small/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-03-31 21:41:41,282: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/config.json "HTTP/1.1 200 OK"]
+[2026-03-31 21:41:41,723: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/generation_config.json "HTTP/1.1 200 OK"]
+[2026-03-31 21:41:41,831: ERROR: main: TrainingArguments.__init__() got an unexpected keyword argument 'evaluation_strategy']
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\main.py", line 39, in <module>
+    model_trainer.main()
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\src\textSummarizer\pipeline\stage_3_model_trainer.py", line 13, in main
+    model_trainer.train()
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\src\textSummarizer\components\model_trainer.py", line 22, in train
+    trainer_args = TrainingArguments(
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'evaluation_strategy'
+[2026-03-31 21:43:35,511: INFO: config: TensorFlow version 2.21.0 available.]
+[2026-03-31 21:43:41,617: INFO: main: stage Data Ingestion Stage initiated]
+[2026-03-31 21:43:41,619: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-31 21:43:41,620: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-31 21:43:41,621: INFO: common: created directory at: artifacts]
+[2026-03-31 21:43:41,621: INFO: common: created directory at: artifacts\data_ingestion]
+[2026-03-31 21:43:41,621: INFO: common: created directory at: artifacts\data_ingestion\raw]
+[2026-03-31 21:43:41,621: INFO: data_ingestion: Downloading dataset knkarthick/samsum from Hugging Face...]
+[2026-03-31 21:43:42,008: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-31 21:43:42,064: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/knkarthick/samsum/6b929ff10edec703164e3ddb2e94aae058c9ab5f/README.md "HTTP/1.1 200 OK"]
+[2026-03-31 21:43:42,354: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/6b929ff10edec703164e3ddb2e94aae058c9ab5f/samsum.py "HTTP/1.1 404 Not Found"]
+[2026-03-31 21:43:42,356: WARNING: _http: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.]
+[2026-03-31 21:43:43,142: INFO: _client: HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/knkarthick/samsum/knkarthick/samsum.py "HTTP/1.1 404 Not Found"]
+[2026-03-31 21:43:43,445: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/knkarthick/samsum/revision/6b929ff10edec703164e3ddb2e94aae058c9ab5f "HTTP/1.1 200 OK"]
+[2026-03-31 21:43:43,737: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/6b929ff10edec703164e3ddb2e94aae058c9ab5f/.huggingface.yaml "HTTP/1.1 404 Not Found"]
+[2026-03-31 21:43:44,212: INFO: _client: HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=knkarthick/samsum "HTTP/1.1 200 OK"]
+[2026-03-31 21:43:44,511: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/knkarthick/samsum/tree/6b929ff10edec703164e3ddb2e94aae058c9ab5f/data?recursive=true&expand=false "HTTP/1.1 404 Not Found"]
+[2026-03-31 21:43:44,793: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/knkarthick/samsum/tree/6b929ff10edec703164e3ddb2e94aae058c9ab5f?recursive=false&expand=false "HTTP/1.1 200 OK"]
+[2026-03-31 21:43:45,165: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/6b929ff10edec703164e3ddb2e94aae058c9ab5f/dataset_infos.json "HTTP/1.1 404 Not Found"]
+[2026-03-31 21:43:45,215: INFO: data_ingestion: Dataset saved successfully at: artifacts\data_ingestion]
+[2026-03-31 21:43:45,217: INFO: data_ingestion: Using Hugging Face format; skipping zip extraction.]
+[2026-03-31 21:43:45,217: INFO: main: stage Data Ingestion Stage completed]
+[2026-03-31 21:43:45,218: INFO: main: stage Data Transformation Stage initiated]
+[2026-03-31 21:43:45,220: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-31 21:43:45,221: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-31 21:43:45,222: INFO: common: created directory at: artifacts]
+[2026-03-31 21:43:45,223: INFO: common: created directory at: artifacts/data_transformation]
+[2026-03-31 21:43:45,517: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/config.json "HTTP/1.1 200 OK"]
+[2026-03-31 21:43:45,809: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-03-31 21:43:46,094: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/t5-small/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-31 21:43:46,382: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google-t5/t5-small/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-03-31 21:43:46,659: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/t5-small/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-31 21:43:46,949: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google-t5/t5-small/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-03-31 21:43:47,889: INFO: main: stage Data Transformation Stage completed]
+[2026-03-31 21:43:47,889: INFO: main: *******************]
+[2026-03-31 21:43:47,889: INFO: main: >>>>>> stage Model Trainer Stage initiated <<<<<<]
+[2026-03-31 21:43:47,892: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-31 21:43:47,894: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-31 21:43:47,894: INFO: common: created directory at: artifacts]
+[2026-03-31 21:43:47,895: INFO: common: created directory at: artifacts/model_trainer]
+[2026-03-31 21:43:48,179: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/config.json "HTTP/1.1 200 OK"]
+[2026-03-31 21:43:48,465: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-03-31 21:43:48,754: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/t5-small/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-31 21:43:49,056: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google-t5/t5-small/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-03-31 21:43:49,338: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/t5-small/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-31 21:43:49,627: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google-t5/t5-small/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-03-31 21:43:50,058: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/config.json "HTTP/1.1 200 OK"]
+[2026-03-31 21:43:50,437: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/generation_config.json "HTTP/1.1 200 OK"]
+[2026-03-31 21:43:50,541: ERROR: main: '>' not supported between instances of 'str' and 'int']
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\main.py", line 39, in <module>
+    model_trainer.main()
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\src\textSummarizer\pipeline\stage_3_model_trainer.py", line 13, in main
+    model_trainer.train()
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\src\textSummarizer\components\model_trainer.py", line 22, in train
+    trainer_args = TrainingArguments(
+  File "<string>", line 112, in __init__
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\training_args.py", line 1537, in __post_init__
+    self._validate_args()
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\training_args.py", line 1660, in _validate_args
+    if self.save_strategy == SaveStrategy.STEPS and self.save_steps > 1:
+TypeError: '>' not supported between instances of 'str' and 'int'
+[2026-03-31 23:05:58,507: INFO: config: TensorFlow version 2.21.0 available.]
+[2026-03-31 23:06:15,334: INFO: main: stage Data Ingestion Stage initiated]
+[2026-03-31 23:06:15,339: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-31 23:06:15,347: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-31 23:06:15,348: INFO: common: created directory at: artifacts]
+[2026-03-31 23:06:15,350: INFO: common: created directory at: artifacts\data_ingestion]
+[2026-03-31 23:06:15,351: INFO: common: created directory at: artifacts\data_ingestion\raw]
+[2026-03-31 23:06:15,353: INFO: data_ingestion: Downloading dataset knkarthick/samsum from Hugging Face...]
+[2026-03-31 23:06:16,123: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-31 23:06:16,228: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/knkarthick/samsum/6b929ff10edec703164e3ddb2e94aae058c9ab5f/README.md "HTTP/1.1 200 OK"]
+[2026-03-31 23:06:16,642: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/6b929ff10edec703164e3ddb2e94aae058c9ab5f/samsum.py "HTTP/1.1 404 Not Found"]
+[2026-03-31 23:06:16,643: WARNING: _http: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.]
+[2026-03-31 23:06:18,176: INFO: _client: HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/knkarthick/samsum/knkarthick/samsum.py "HTTP/1.1 404 Not Found"]
+[2026-03-31 23:06:19,589: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/knkarthick/samsum/revision/6b929ff10edec703164e3ddb2e94aae058c9ab5f "HTTP/1.1 200 OK"]
+[2026-03-31 23:06:20,010: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/6b929ff10edec703164e3ddb2e94aae058c9ab5f/.huggingface.yaml "HTTP/1.1 404 Not Found"]
+[2026-03-31 23:06:20,929: INFO: _client: HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=knkarthick/samsum "HTTP/1.1 200 OK"]
+[2026-03-31 23:06:21,654: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/knkarthick/samsum/tree/6b929ff10edec703164e3ddb2e94aae058c9ab5f/data?recursive=true&expand=false "HTTP/1.1 404 Not Found"]
+[2026-03-31 23:06:22,061: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/knkarthick/samsum/tree/6b929ff10edec703164e3ddb2e94aae058c9ab5f?recursive=false&expand=false "HTTP/1.1 200 OK"]
+[2026-03-31 23:06:22,681: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/6b929ff10edec703164e3ddb2e94aae058c9ab5f/dataset_infos.json "HTTP/1.1 404 Not Found"]
+[2026-03-31 23:06:22,908: INFO: data_ingestion: Dataset saved successfully at: artifacts\data_ingestion]
+[2026-03-31 23:06:22,911: INFO: data_ingestion: Using Hugging Face format; skipping zip extraction.]
+[2026-03-31 23:06:22,912: INFO: main: stage Data Ingestion Stage completed]
+[2026-03-31 23:06:22,912: INFO: main: stage Data Transformation Stage initiated]
+[2026-03-31 23:06:22,919: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-31 23:06:22,923: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-31 23:06:22,925: INFO: common: created directory at: artifacts]
+[2026-03-31 23:06:22,926: INFO: common: created directory at: artifacts/data_transformation]
+[2026-03-31 23:06:23,485: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/config.json "HTTP/1.1 200 OK"]
+[2026-03-31 23:06:23,902: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-03-31 23:06:24,302: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/t5-small/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-31 23:06:24,622: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google-t5/t5-small/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-03-31 23:06:25,118: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/t5-small/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-31 23:06:25,433: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google-t5/t5-small/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-03-31 23:06:27,846: INFO: main: stage Data Transformation Stage completed]
+[2026-03-31 23:06:27,846: INFO: main: *******************]
+[2026-03-31 23:06:27,846: INFO: main: >>>>>> stage Model Trainer Stage initiated <<<<<<]
+[2026-03-31 23:06:27,850: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-31 23:06:27,852: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-31 23:06:27,852: INFO: common: created directory at: artifacts]
+[2026-03-31 23:06:27,853: INFO: common: created directory at: artifacts/model_trainer]
+[2026-03-31 23:06:28,304: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/config.json "HTTP/1.1 200 OK"]
+[2026-03-31 23:06:28,606: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-03-31 23:06:28,920: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/t5-small/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-31 23:06:29,229: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google-t5/t5-small/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-03-31 23:06:29,639: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/t5-small/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"]
+[2026-03-31 23:06:29,933: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google-t5/t5-small/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-03-31 23:06:30,749: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/config.json "HTTP/1.1 200 OK"]
+[2026-03-31 23:06:31,468: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/generation_config.json "HTTP/1.1 200 OK"]
+[2026-03-31 23:06:31,580: ERROR: main: Using the `Trainer` with `PyTorch` requires `accelerate>=1.1.0`: Please run `pip install transformers[torch]` or `pip install 'accelerate>=1.1.0'`]
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\main.py", line 39, in <module>
+    model_trainer.main()
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\src\textSummarizer\pipeline\stage_3_model_trainer.py", line 13, in main
+    model_trainer.train()
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\src\textSummarizer\components\model_trainer.py", line 22, in train
+    trainer_args = TrainingArguments(
+  File "<string>", line 112, in __init__
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\training_args.py", line 1586, in __post_init__
+    self.device
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\training_args.py", line 1874, in device
+    return self._setup_devices
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\functools.py", line 981, in __get__
+    val = self.func(instance)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\training_args.py", line 1765, in _setup_devices
+    raise ImportError(
+ImportError: Using the `Trainer` with `PyTorch` requires `accelerate>=1.1.0`: Please run `pip install transformers[torch]` or `pip install 'accelerate>=1.1.0'`
+[2026-04-01 02:52:25,448: INFO: config: TensorFlow version 2.21.0 available.]
+[2026-04-01 02:52:35,480: INFO: main: stage Data Ingestion Stage initiated]
+[2026-04-01 02:52:35,483: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-04-01 02:52:35,486: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-01 02:52:35,486: INFO: common: created directory at: artifacts]
+[2026-04-01 02:52:35,487: INFO: common: created directory at: artifacts\data_ingestion]
+[2026-04-01 02:52:35,487: INFO: common: created directory at: artifacts\data_ingestion\raw]
+[2026-04-01 02:52:35,489: INFO: data_ingestion: Downloading dataset knkarthick/samsum from Hugging Face...]
+[2026-04-01 02:52:35,867: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"]
+[2026-04-01 02:52:35,917: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/knkarthick/samsum/6b929ff10edec703164e3ddb2e94aae058c9ab5f/README.md "HTTP/1.1 200 OK"]
+[2026-04-01 02:52:36,210: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/6b929ff10edec703164e3ddb2e94aae058c9ab5f/samsum.py "HTTP/1.1 404 Not Found"]
+[2026-04-01 02:52:36,211: WARNING: _http: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.]
+[2026-04-01 02:52:37,006: INFO: _client: HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/knkarthick/samsum/knkarthick/samsum.py "HTTP/1.1 404 Not Found"]
+[2026-04-01 02:52:37,335: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/knkarthick/samsum/revision/6b929ff10edec703164e3ddb2e94aae058c9ab5f "HTTP/1.1 200 OK"]
+[2026-04-01 02:52:37,616: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/6b929ff10edec703164e3ddb2e94aae058c9ab5f/.huggingface.yaml "HTTP/1.1 404 Not Found"]
+[2026-04-01 02:52:38,089: INFO: _client: HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=knkarthick/samsum "HTTP/1.1 200 OK"]
+[2026-04-01 02:52:38,381: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/knkarthick/samsum/tree/6b929ff10edec703164e3ddb2e94aae058c9ab5f/data?recursive=true&expand=false "HTTP/1.1 404 Not Found"]
+[2026-04-01 02:52:38,665: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/knkarthick/samsum/tree/6b929ff10edec703164e3ddb2e94aae058c9ab5f?recursive=false&expand=false "HTTP/1.1 200 OK"]
+[2026-04-01 02:52:39,029: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/6b929ff10edec703164e3ddb2e94aae058c9ab5f/dataset_infos.json "HTTP/1.1 404 Not Found"]
+[2026-04-01 02:52:39,123: INFO: data_ingestion: Dataset saved successfully at: artifacts\data_ingestion]
+[2026-04-01 02:52:39,125: INFO: data_ingestion: Using Hugging Face format; skipping zip extraction.]
+[2026-04-01 02:52:39,125: INFO: main: stage Data Ingestion Stage completed]
+[2026-04-01 02:52:39,125: INFO: main: stage Data Transformation Stage initiated]
+[2026-04-01 02:52:39,127: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-04-01 02:52:39,128: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-01 02:52:39,128: INFO: common: created directory at: artifacts]
+[2026-04-01 02:52:39,128: INFO: common: created directory at: artifacts/data_transformation]
+[2026-04-01 02:52:39,415: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/config.json "HTTP/1.1 200 OK"]
+[2026-04-01 02:52:39,718: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-04-01 02:52:40,004: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/t5-small/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"]
+[2026-04-01 02:52:40,281: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google-t5/t5-small/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-04-01 02:52:40,579: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/t5-small/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"]
+[2026-04-01 02:52:40,851: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google-t5/t5-small/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-04-01 02:52:41,765: INFO: main: stage Data Transformation Stage completed]
+[2026-04-01 02:52:41,765: INFO: main: *******************]
+[2026-04-01 02:52:41,765: INFO: main: >>>>>> stage Model Trainer Stage initiated <<<<<<]
+[2026-04-01 02:52:41,768: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-04-01 02:52:41,770: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-01 02:52:41,770: INFO: common: created directory at: artifacts]
+[2026-04-01 02:52:41,771: INFO: common: created directory at: artifacts/model_trainer]
+[2026-04-01 02:52:42,042: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/config.json "HTTP/1.1 200 OK"]
+[2026-04-01 02:52:42,374: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-04-01 02:52:42,663: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/t5-small/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"]
+[2026-04-01 02:52:42,946: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google-t5/t5-small/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-04-01 02:52:43,227: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/t5-small/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"]
+[2026-04-01 02:52:43,505: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google-t5/t5-small/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-04-01 02:52:43,978: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/config.json "HTTP/1.1 200 OK"]
+[2026-04-01 02:52:44,419: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/generation_config.json "HTTP/1.1 200 OK"]
+[2026-04-01 02:52:44,511: ERROR: main: Using the `Trainer` with `PyTorch` requires `accelerate>=1.1.0`: Please run `pip install transformers[torch]` or `pip install 'accelerate>=1.1.0'`]
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\main.py", line 39, in <module>
+    model_trainer.main()
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\src\textSummarizer\pipeline\stage_3_model_trainer.py", line 13, in main
+    model_trainer.train()
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\src\textSummarizer\components\model_trainer.py", line 22, in train
+    trainer_args = TrainingArguments(
+  File "<string>", line 112, in __init__
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\training_args.py", line 1586, in __post_init__
+    self.device
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\training_args.py", line 1874, in device
+    return self._setup_devices
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\functools.py", line 981, in __get__
+    val = self.func(instance)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\training_args.py", line 1765, in _setup_devices
+    raise ImportError(
+ImportError: Using the `Trainer` with `PyTorch` requires `accelerate>=1.1.0`: Please run `pip install transformers[torch]` or `pip install 'accelerate>=1.1.0'`
+[2026-04-01 02:53:33,913: INFO: config: TensorFlow version 2.21.0 available.]
+[2026-04-01 02:53:46,044: INFO: main: stage Data Ingestion Stage initiated]
+[2026-04-01 02:53:46,048: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-04-01 02:53:46,051: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-01 02:53:46,052: INFO: common: created directory at: artifacts]
+[2026-04-01 02:53:46,053: INFO: common: created directory at: artifacts\data_ingestion]
+[2026-04-01 02:53:46,053: INFO: common: created directory at: artifacts\data_ingestion\raw]
+[2026-04-01 02:53:46,054: INFO: data_ingestion: Downloading dataset knkarthick/samsum from Hugging Face...]
+[2026-04-01 02:53:46,465: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"]
+[2026-04-01 02:53:46,521: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/knkarthick/samsum/6b929ff10edec703164e3ddb2e94aae058c9ab5f/README.md "HTTP/1.1 200 OK"]
+[2026-04-01 02:53:46,799: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/6b929ff10edec703164e3ddb2e94aae058c9ab5f/samsum.py "HTTP/1.1 404 Not Found"]
+[2026-04-01 02:53:47,592: INFO: _client: HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/knkarthick/samsum/knkarthick/samsum.py "HTTP/1.1 404 Not Found"]
+[2026-04-01 02:53:47,933: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/knkarthick/samsum/revision/6b929ff10edec703164e3ddb2e94aae058c9ab5f "HTTP/1.1 200 OK"]
+[2026-04-01 02:53:48,212: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/6b929ff10edec703164e3ddb2e94aae058c9ab5f/.huggingface.yaml "HTTP/1.1 404 Not Found"]
+[2026-04-01 02:53:48,709: INFO: _client: HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=knkarthick/samsum "HTTP/1.1 200 OK"]
+[2026-04-01 02:53:49,001: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/knkarthick/samsum/tree/6b929ff10edec703164e3ddb2e94aae058c9ab5f/data?recursive=true&expand=false "HTTP/1.1 404 Not Found"]
+[2026-04-01 02:53:49,294: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/knkarthick/samsum/tree/6b929ff10edec703164e3ddb2e94aae058c9ab5f?recursive=false&expand=false "HTTP/1.1 200 OK"]
+[2026-04-01 02:53:49,656: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/6b929ff10edec703164e3ddb2e94aae058c9ab5f/dataset_infos.json "HTTP/1.1 404 Not Found"]
+[2026-04-01 02:53:49,741: INFO: data_ingestion: Dataset saved successfully at: artifacts\data_ingestion]
+[2026-04-01 02:53:49,741: INFO: data_ingestion: Using Hugging Face format; skipping zip extraction.]
+[2026-04-01 02:53:49,741: INFO: main: stage Data Ingestion Stage completed]
+[2026-04-01 02:53:49,742: INFO: main: stage Data Transformation Stage initiated]
+[2026-04-01 02:53:49,744: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-04-01 02:53:49,746: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-01 02:53:49,746: INFO: common: created directory at: artifacts]
+[2026-04-01 02:53:49,747: INFO: common: created directory at: artifacts/data_transformation]
+[2026-04-01 02:53:50,041: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/config.json "HTTP/1.1 200 OK"]
+[2026-04-01 02:53:50,343: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-04-01 02:53:50,638: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/t5-small/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"]
+[2026-04-01 02:53:50,935: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google-t5/t5-small/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-04-01 02:53:51,217: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/t5-small/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"]
+[2026-04-01 02:53:51,502: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google-t5/t5-small/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-04-01 02:53:52,423: INFO: main: stage Data Transformation Stage completed]
+[2026-04-01 02:53:52,424: INFO: main: *******************]
+[2026-04-01 02:53:52,424: INFO: main: >>>>>> stage Model Trainer Stage initiated <<<<<<]
+[2026-04-01 02:53:52,426: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-04-01 02:53:52,427: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-01 02:53:52,428: INFO: common: created directory at: artifacts]
+[2026-04-01 02:53:52,429: INFO: common: created directory at: artifacts/model_trainer]
+[2026-04-01 02:53:52,728: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/config.json "HTTP/1.1 200 OK"]
+[2026-04-01 02:53:53,016: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-04-01 02:53:53,313: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/t5-small/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"]
+[2026-04-01 02:53:53,594: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google-t5/t5-small/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-04-01 02:53:53,899: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/t5-small/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"]
+[2026-04-01 02:53:54,194: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google-t5/t5-small/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-04-01 02:53:54,628: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/config.json "HTTP/1.1 200 OK"]
+[2026-04-01 02:55:51,272: INFO: server: Started server process [34664]]
+[2026-04-01 02:55:51,272: INFO: on: Waiting for application startup.]
+[2026-04-01 02:55:51,274: INFO: on: Application startup complete.]
+[2026-04-01 02:55:51,274: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2026-04-01 02:56:07,898: INFO: config: TensorFlow version 2.21.0 available.]
+[2026-04-01 02:56:23,264: INFO: main: stage Data Ingestion Stage initiated]
+[2026-04-01 02:56:23,278: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-04-01 02:56:23,297: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-01 02:56:23,298: INFO: common: created directory at: artifacts]
+[2026-04-01 02:56:23,299: INFO: common: created directory at: artifacts\data_ingestion]
+[2026-04-01 02:56:23,300: INFO: common: created directory at: artifacts\data_ingestion\raw]
+[2026-04-01 02:56:23,301: INFO: data_ingestion: Downloading dataset knkarthick/samsum from Hugging Face...]
+[2026-04-01 02:56:23,708: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"]
+[2026-04-01 02:56:23,767: INFO: _client: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/knkarthick/samsum/6b929ff10edec703164e3ddb2e94aae058c9ab5f/README.md "HTTP/1.1 200 OK"]
+[2026-04-01 02:56:24,077: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/6b929ff10edec703164e3ddb2e94aae058c9ab5f/samsum.py "HTTP/1.1 404 Not Found"]
+[2026-04-01 02:56:24,079: WARNING: _http: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.]
+[2026-04-01 02:56:24,910: INFO: _client: HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/knkarthick/samsum/knkarthick/samsum.py "HTTP/1.1 404 Not Found"]
+[2026-04-01 02:56:25,273: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/knkarthick/samsum/revision/6b929ff10edec703164e3ddb2e94aae058c9ab5f "HTTP/1.1 200 OK"]
+[2026-04-01 02:56:25,568: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/6b929ff10edec703164e3ddb2e94aae058c9ab5f/.huggingface.yaml "HTTP/1.1 404 Not Found"]
+[2026-04-01 02:56:26,075: INFO: _client: HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=knkarthick/samsum "HTTP/1.1 200 OK"]
+[2026-04-01 02:56:26,382: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/knkarthick/samsum/tree/6b929ff10edec703164e3ddb2e94aae058c9ab5f/data?recursive=true&expand=false "HTTP/1.1 404 Not Found"]
+[2026-04-01 02:56:26,675: INFO: _client: HTTP Request: GET https://huggingface.co/api/datasets/knkarthick/samsum/tree/6b929ff10edec703164e3ddb2e94aae058c9ab5f?recursive=false&expand=false "HTTP/1.1 200 OK"]
+[2026-04-01 02:56:27,198: INFO: _client: HTTP Request: HEAD https://huggingface.co/datasets/knkarthick/samsum/resolve/6b929ff10edec703164e3ddb2e94aae058c9ab5f/dataset_infos.json "HTTP/1.1 404 Not Found"]
+[2026-04-01 02:56:27,434: INFO: data_ingestion: Dataset saved successfully at: artifacts\data_ingestion]
+[2026-04-01 02:56:27,434: INFO: data_ingestion: Using Hugging Face format; skipping zip extraction.]
+[2026-04-01 02:56:27,434: INFO: main: stage Data Ingestion Stage completed]
+[2026-04-01 02:56:27,434: INFO: main: stage Data Transformation Stage initiated]
+[2026-04-01 02:56:27,437: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-04-01 02:56:27,439: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-01 02:56:27,440: INFO: common: created directory at: artifacts]
+[2026-04-01 02:56:27,441: INFO: common: created directory at: artifacts/data_transformation]
+[2026-04-01 02:56:27,747: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/config.json "HTTP/1.1 200 OK"]
+[2026-04-01 02:56:28,107: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-04-01 02:56:28,444: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/t5-small/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"]
+[2026-04-01 02:56:28,736: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google-t5/t5-small/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-04-01 02:56:29,035: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/t5-small/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"]
+[2026-04-01 02:56:29,316: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google-t5/t5-small/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-04-01 02:57:20,515: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-04-01 02:57:20,523: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-01 02:57:20,526: INFO: common: created directory at: artifacts]
+[2026-04-01 02:57:20,530: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-04-01 02:57:21,132: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/config.json "HTTP/1.1 200 OK"]
+[2026-04-01 02:57:21,516: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-04-01 02:57:21,518: WARNING: _http: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.]
+[2026-04-01 02:57:21,835: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/t5-small/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"]
+[2026-04-01 02:57:22,132: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google-t5/t5-small/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-04-01 02:57:22,422: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/t5-small/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"]
+[2026-04-01 02:57:22,715: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google-t5/t5-small/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-04-01 02:57:23,472: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/config.json "HTTP/1.1 200 OK"]
+[2026-04-01 02:57:23,489: ERROR: h11_impl: Exception in ASGI application
+]
+Traceback (most recent call last):
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\app.py", line 34, in predict_route
+    raise e
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\app.py", line 31, in predict_route
+    text = obj.predict(text)
+  File "C:\Users\HP\Desktop\Y3 S2\projects\Text-Summarizer\src\textSummarizer\pipeline\prediction_pipeline.py", line 13, in predict
+    pipe = pipeline("summarization", model=self.config.model_path,tokenizer=tokenizer)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\pipelines\__init__.py", line 747, in pipeline
+    normalized_task, targeted_task, task_options = check_task(task)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\pipelines\__init__.py", line 355, in check_task
+    return PIPELINE_REGISTRY.check_task(task)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python310\lib\site-packages\transformers\pipelines\base.py", line 1338, in check_task
+    raise KeyError(f"Unknown task {task}, available tasks are {self.get_supported_tasks()}")
+KeyError: "Unknown task summarization, available tasks are ['any-to-any', 'audio-classification', 'automatic-speech-recognition', 'depth-estimation', 'document-question-answering', 'feature-extraction', 'fill-mask', 'image-classification', 'image-feature-extraction', 'image-segmentation', 'image-text-to-text', 'keypoint-matching', 'mask-generation', 'ner', 'object-detection', 'sentiment-analysis', 'table-question-answering', 'text-classification', 'text-generation', 'text-to-audio', 'text-to-speech', 'token-classification', 'video-classification', 'zero-shot-audio-classification', 'zero-shot-classification', 'zero-shot-image-classification', 'zero-shot-object-detection']"
+[2026-04-01 02:59:06,511: INFO: server: Shutting down]
+[2026-04-01 02:59:06,621: INFO: on: Waiting for application shutdown.]
+[2026-04-01 02:59:06,624: INFO: on: Application shutdown complete.]
+[2026-04-01 02:59:06,624: INFO: server: Finished server process [34664]]
+[2026-04-01 03:21:49,535: INFO: server: Started server process [9340]]
+[2026-04-01 03:21:49,535: INFO: on: Waiting for application startup.]
+[2026-04-01 03:21:49,538: INFO: on: Application startup complete.]
+[2026-04-01 03:21:49,539: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2026-04-01 03:22:08,771: INFO: config: TensorFlow version 2.21.0 available.]
+[2026-04-01 03:22:38,837: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-04-01 03:22:38,840: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-04-01 03:22:38,845: INFO: common: created directory at: artifacts]
+[2026-04-01 03:22:38,845: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-04-01 03:22:39,709: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/config.json "HTTP/1.1 200 OK"]
+[2026-04-01 03:22:40,020: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"]
+[2026-04-01 03:22:40,023: WARNING: _http: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.]
+[2026-04-01 03:22:40,323: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/t5-small/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"]
+[2026-04-01 03:22:40,603: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google-t5/t5-small/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"]
+[2026-04-01 03:22:40,876: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/t5-small/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"]
+[2026-04-01 03:22:41,159: INFO: _client: HTTP Request: GET https://huggingface.co/api/models/google-t5/t5-small/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"]
+[2026-04-01 03:22:41,779: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/config.json "HTTP/1.1 200 OK"]
+[2026-04-01 03:22:42,808: INFO: _client: HTTP Request: HEAD https://huggingface.co/t5-small/resolve/main/generation_config.json "HTTP/1.1 200 OK"]
