@@ -28,14 +28,10 @@ This system addresses information overload by enabling asynchronous, scalable su
 | **Frontend UI** | HTML5, CSS3, Jinja2, JavaScript |
 | **System Utilities**| PyPDF2, YAML Parsing, Boto3 |
 
-## 📸 Screenshots / Demo
-*(Add your stunning UI screenshot here!)*
-<!-- Place an image named UI_Showcase.png in an image folder and reference it here: ![Summary UI Demo](./UI_Showcase.png) -->
-
 ## ⚙️ How to Run
 **1. Clone the repository and navigate inside:**
 ```bash
-git clone <repository-url>
+git clone https://github.com/Chamoda-dasanayake/Text-Summarizer.git
 cd Text-Summarizer
 ```
 **2. Environment and Dependency Installation:**
