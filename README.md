@@ -104,112 +104,20 @@ This system delivers **instant, accurate text summarization** powered by a fine-
 
 ## 🛠️ Tech Stack
 
-| Layer | Technology | Purpose |
-|-------|-----------|---------|
-| **NLP Model** | HuggingFace Transformers (T5-small) | Seq2Seq fine-tuning and inference for abstractive summarization |
-| **Deep Learning** | PyTorch | Model backbone with CUDA acceleration support |
-| **Dataset** | SAMSum (via HuggingFace `datasets`) | 16K dialogue-summary pairs for training and evaluation |
-| **Evaluation** | ROUGE (via `evaluate`) | Automated scoring across rouge1, rouge2, rougeL, rougeLsum |
-| **Experiment Tracking** | MLflow | Metric logging, artifact versioning, and experiment registry |
-| **Pipeline Orchestration** | DVC | Reproducible 4-stage ML pipeline with dependency graphs |
-| **Backend** | FastAPI + Uvicorn | Async REST API server with background task support |
-| **Frontend** | HTML5 / CSS3 / JavaScript / Jinja2 | Glassmorphic UI with drag-and-drop and async form submission |
-| **PDF Parsing** | PyPDF2 | Binary PDF text extraction for document upload feature |
-| **Config Management** | PyYAML + python-box | YAML parsing with dot-access `ConfigBox` for clean config access |
+| Component | Technology Used |
+| :--- | :--- |
+| **Language** | Python 3.10 |
+| **NLP Framework** | Hugging Face Transformers, Datasets, PyTorch |
+| **Backend API** | FastAPI, Uvicorn, Python-Multipart |
+| **Frontend UI** | HTML5, CSS3, Jinja2, JavaScript |
+| **System Utilities**| PyPDF2, YAML Parsing, Boto3 |
 
----
+## 📸 Screenshots / Demo
+*(Add your stunning UI screenshot here!)*
+<!-- Place an image named UI_Showcase.png in an image folder and reference it here: ![Summary UI Demo](./UI_Showcase.png) -->
 
-## 📁 Project Structure
-
-```
-Text-Summarizer/
-│
-├── src/textSummarizer/                  # 🧠 Core Package
-│   ├── components/
-│   │   ├── data_ingestion.py                # Downloads SAMSum from HuggingFace Hub
-│   │   ├── data_transformation.py           # Tokenizes dialogues & summaries via T5 tokenizer
-│   │   ├── model_trainer.py                 # Fine-tunes T5 with HF Trainer API
-│   │   └── model_evaluation.py              # ROUGE scoring + MLflow experiment logging
-│   │
-│   ├── pipeline/
-│   │   ├── stage_1_data_ingestion_pipeline.py
-│   │   ├── stage_2_data_transformation_pipeline.py
-│   │   ├── stage_3_model_trainer.py
-│   │   ├── stage_4_model_evaluation.py
-│   │   └── prediction_pipeline.py           # Inference pipeline (model.generate)
-│   │
-│   ├── config/
-│   │   └── configuration.py                 # ConfigurationManager — reads YAML, builds entities
-│   │
-│   ├── entity/
-│   │   └── __init__.py                      # @dataclass contracts for each pipeline stage
-│   │
-│   ├── utils/
-│   │   └── common.py                        # read_yaml(), create_directories() utilities
-│   │
-│   ├── constants/
-│   │   └── __init__.py                      # CONFIG_FILE_PATH, PARAMS_FILE_PATH
-│   │
-│   └── logging/
-│       └── __init__.py                      # File + console logger setup
-│
-├── config/
-│   └── config.yaml                      # All paths, model checkpoints, dataset config
-│
-├── templates/
-│   └── index.html                       # 🎨 Glassmorphic frontend UI
-│
-├── research/                            # 📓 Jupyter notebooks (EDA & experimentation)
-│   ├── 1_data_ingestion.ipynb
-│   ├── 2_data_transformation.ipynb
-│   ├── 3_model_trainer.ipynb
-│   └── 4_model_evaluation.ipynb
-│
-├── app.py                               # ⚡ FastAPI server entry point
-├── main.py                              # 🚀 Training pipeline orchestrator (all 4 stages)
-├── dvc.yaml                             # 📊 DVC pipeline definition
-├── params.yaml                          # ⚙️ Training hyperparameters
-├── requirements.txt                     # 📦 Python dependencies
-├── template.py                          # 🏗️ Project scaffolding script
-└── .github/workflows/                   # CI/CD directory (reserved)
-```
-
----
-
-## 📊 MLOps Pipeline Stages
-
-Each stage is an **independently executable, trackable unit** — orchestrated sequentially via `main.py` or reproduced via `dvc repro`.
-
-| Stage | Component | Input | Output | Key Details |
-|-------|-----------|-------|--------|-------------|
-| **1. Data Ingestion** | `DataIngestion` | HuggingFace Hub (`knkarthick/samsum`) | `artifacts/data_ingestion/` | Downloads and caches the SAMSum dataset locally |
-| **2. Data Transformation** | `DataTransformation` | Raw dataset splits | `artifacts/data_transformation/samsum_dataset/` | Tokenizes dialogues (max 1024 tokens) and summaries (max 128 tokens) using T5 tokenizer |
-| **3. Model Training** | `ModelTrainer` | Tokenized dataset | `artifacts/model_trainer/pegasus-samsum-model/` + `tokenizer/` | Fine-tunes T5-small with gradient accumulation (16 steps), warmup (500 steps), weight decay (0.01) |
-| **4. Model Evaluation** | `ModelEvaluation` | Trained model + test split | `artifacts/model_evaluation/metrics.csv` + MLflow logs | Computes ROUGE scores with beam search and logs results to MLflow |
-
-### Training Hyperparameters (`params.yaml`)
-
-```yaml
-num_train_epochs: 1
-warmup_steps: 500
-per_device_train_batch_size: 1
-weight_decay: 0.01
-gradient_accumulation_steps: 16
-eval_strategy: steps
-eval_steps: 500
-```
-
----
-
-## ⚙️ Getting Started
-
-### Prerequisites
-
-- **Python 3.10+**
-- **GPU (optional)** — CUDA-enabled GPU recommended for training; CPU works for inference
-
-### 1. Clone & Setup
-
+## ⚙️ How to Run
+**1. Clone the repository and navigate inside:**
 ```bash
 git clone https://github.com/Chamoda-dasanayake/Text-Summarizer.git
 cd Text-Summarizer
